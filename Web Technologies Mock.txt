@@ -1,0 +1,199 @@
+           Web Technologies Mock
+
+
+1.What is HTML
+HTML stands for Hyper Text Markup Language
+Html is an marup language which is used to create web applications.
+
+2.What is an Attribute
+Attribute is an property or behaviour of an element in a HTML.
+Attribute is written inside a tag.
+
+3.Write a basic structure of HTML
+<html>
+<head>
+<title>Title</title>
+</head>
+<body>
+
+body of the web page
+
+
+</body>
+<html>
+
+4.Create an image in HTML
+To create an image in using HTML we use the tag called <img> tag with an attribute src which specifies the location of the image.
+
+syntax:
+<img src="image.jpg">
+
+5.How to create an Hyperlink in HTML
+To create an hyperlink in HTML we use anchor tag(<a>) with attribute href which gives the url of the link and this we redirect to the specified link
+
+syntax:
+<a href="url">Link Text</a>
+
+6.How to create syntax for table in HTML
+ <table>
+ <tr> 
+  <th></th>
+  <th></th>
+  <th></th>
+ </tr>
+ <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+
+ </tr>
+ </table>
+
+7.Create a form with fields name ,password,city,gender,dob
+
+ <form>
+  <label>name</label><br>
+  <input type="text" name="name"><br>
+  
+  <label>password</label><br>
+  <input type="password" name="password">
+
+  <label>gender</label><br>
+  <input type="radio" name="gender" value="male">
+  <input type="radio" name="gender" value="female">
+  <input type="radio" name="gender" value="other">
+
+  <label>city</label><br>
+  <select> 
+  <option>--select city--</option>
+  <option>ASD</option>
+  <option>FGH</option>
+  <option>JKL</option>
+  </select>
+  
+  <label> DOB </label>
+  <input type="date" name="dob">
+
+ 
+ </form>
+   
+8.What is css,syntax for css
+ 
+ CSS stands for cascading style sheet, it used to give style to the web pages like color ,position etc
+
+
+  <style>
+    button{
+   property:value;
+    }
+  
+  </style>
+
+9.What is external CSS
+ it is a style sheet written on new page  and it is linked to Html page through <link> tag
+syntax:
+  <link rel="stylesheet" href="qwe.css">
+
+
+10.Difference between selectors in css
+ 
+element selector: is used to apply css for only one tag
+    low priority
+ 
+groupselector : is used to apply css for many tags
+low priority as compare to id and class selector
+
+
+class selector : is used to apply css which have the specified classes low priority as compare to id selector
+
+
+11.Explain CSS Box Model with example.
+A CSS Box model is an box structure that is wrapped around the HTML Elements.
+This box model structure consists of 3 sections: margin,border and padding
+The box model structure helps to maintain spaces between 2 or more HTNL elements in an webpage
+example:
+
+div{
+width:100;
+margin:0;
+border:20px;
+padding:100px;
+}
+
+
+12.Create an image and display names inside the image by placing name at corner of the image
+<html>
+<head>
+<title>Title</title>
+<style>
+img{
+    position:absolute;
+}
+p{
+   position:relative;
+   color:red;
+   left:100px;
+   top:100px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<img src="image.jpg">
+<p>Name</p>
+</div>
+<body>
+
+13.What is JavaScript
+JavaScript is a scripting language used in creating web pages with HTML and CSS.
+with the use of JavaScript the web page can be made a dynamic web page 
+JavaScript is used to calculate,manipulate and alter data based on the requirements taken from the user.
+
+
+14.Write syntax for javascript
+Syntax for variable declaration and initilization in javascript:
+
+let x;
+var y;
+
+x=10;
+y=11;
+var a=x+y;
+
+Synatx for writting a function:
+function function_name{
+
+function body
+}
+
+
+15.Difference btw let,var and const
+let: let keyword is used to specify string type of data in javascript and the variables declared are active within the block of code specifed
+Duplicate values not allowed
+
+const:const keyword is to specify constant values in javascript where the variable value will not change
+
+var:var keyword is used to specify string type of data and these variables are have the scope within the function.
+Duplicate values are allowed 
+
+16.Write form valitation in JavaScript
+
+function submit(){
+
+var firstName = document.getElementById("firstName")      
+let firstMsg = document.getElementById("firstMsg")
+firstMsg.innerHTML = ''
+if(firstName.value == ''){
+document.getElementById("firstMsg")
+firstMsg.innerHTML = "error please...enter first name"
+firstMsg.style.color = 'red'
+}
+.
+.
+.
+<form>
+<label>FirstName</label>
+<input type="text" onClick="submit()" id="firstName" name="firstName">
+<span id="firstMsg"></span>
+</form>
